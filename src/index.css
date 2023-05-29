@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Zilla+Slab:wght@400;700&display=swap');
+
+/* Header styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  body{
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    margin-left: 4rem;
+  }
+  #site-name-for-mobile {
+    display:none;
+  }
+  #site-name a, #site-name-for-mobile a{
+    text-decoration: none;
+    color: #000;
+  }
+  #header{
+    background-color: #eceed5;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav ul li{
+    margin-right: 2rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #106dca;
+  }
+
+  /* Education styles */
+  ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Download button styles */
+  
+  .downloadbtn {
+    width: 170px;
+    height: 42px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0 30px 0;
+  }
+  .downloadbtn a {
+    text-decoration: none;
+    color: #eceed5;
+  }
+
+/* Add margin to all images */
+img {
+    margin-left: 1rem;
+  }
+
+/* Projects styles */
+li p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for about page */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  /*align-items: center;*/
+  gap:200px;
+  margin-top: 30px;
+}
+#about-text, #about-text-cont{
+  font-size: 12px;
+}
+#about-text-portion{
+margin-top: 55px;
+}
+
+/* Styles for social media icon */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  color: #000;
+  font-size: 2rem;
+}
+.social-icons i {
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+.social-icons i:hover {
+  color: #007bff;
+}
+
+/* Horizontal line */
+#line {
+  width: 500px;
+  margin: 50px auto;
+  border: none;
+  border-top: 2px solid #333;
+}
+
+/* Styles for qualification */
+
+#qualification_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+#qualification_container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#qualification_container li {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+#qualification_container li:last-child {
+  margin-bottom: 0;
+}
+#qualification_container li p {
+  margin: 0;
+}
+#qualification_container li:nth-child(1) p:nth-child(1) {
+  grid-row: 1 / span 1;
+}
+#qualification_container li:nth-child(1) p:nth-child(2) {
+  grid-row: 2 / span 1;
+  margin-right: 137px;
+}
+#qualification_container li p:nth-child(2) {
+  grid-row: 2 / span 2;
+}
+#qualification_container li p:nth-child(3) {
+  grid-column: 2 / span 2;
+}
+#qualification_container li p:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+#qualification_container li p:nth-child(5) {
+  grid-column: 2 / span 2;
+}
+
+/* Styles for Projects */
+
+#project_container li:hover a,
+#project_container li:hover p {
+  display: block;
+  text-decoration: none;
+}
+#project_container, #skill_container {
+  display: grid;
+  justify-items: center;
+}
+
+#project_container ul, #skill_container ul {
+  list-style: none;
+ /* margin: 2rem;*/
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+#project_container ul{
+  grid-template-columns: repeat(2, 1fr);
+}
+#skill_container ul {
+  grid-template-columns: repeat(5, 1fr);
+}
+#skill_container li {
+  display: inline-block; 
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);  /*Add box shadow */
+  font-size: 12px;
+}
+#project_container li, #skill_container li {
+  border: 1px solid #ccc;
+  padding: 1rem; 
+  margin: 1rem; 
+  text-align: center;
+  position: relative;
+}
+#skill_container li img{
+  display: block; 
+}
+#project_container li img{
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+}
+#project_container li:hover, #skill_container li img:hover, .downloadbtn:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+}
+#project_container li a,
+#project_container li p {
+  display: none;
+  position:static;
+}
+#project_container li:hover a,
+#project_container li:hover p {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  position: static; 
+}
+#project_container li:hover h3 a:nth-child(1)  {
+  top: 10%;
+  left: 36%;
+}
+#project_container li:hover p {
+  top: 30%;
+  left: 5%;
+  text-align: left;
+}
+#project_container li:hover a {
+  top: 80%;
+  left: 5%;
+}
+#project_container li:hover{
+  background-color: black;
+}
+#project_container li:hover img {
+  display: none;
+}
+
+/* Styles for footer */
+footer{
+  margin-top: 2rem;
+  text-align: center;
+}
+footer p{
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+ /* Style for the desktop navigation menu */
+ .desktop-menu {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.desktop-menu li {
+  margin-left: 4rem;
+}
+
+.desktop-menu a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* Style for the mobile menu toggle button */
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* Show the mobile menu when the mobile menu toggle button is clicked */
+.mobile-menu-toggle:checked + .mobile-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    gap:270px;
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    gap:150px;
+  }
+}
+
+/*********** Style for screen size upto 767*************/
+@media screen and (max-width: 767px) {
+  
+/* Style for the mobile navigation menu */
+.mobile-menu {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top:12%;
+  left: 60%;
+  background-color: #000000;
+  z-index: 1;
+}
+
+.mobile-menu ul {
+list-style: none;
+display: block;
+margin: 0 0 0 17px;
+padding: 0;
+width: 150px;
+}
+
+.mobile-menu li {
+margin: 0;
+width: 80%;
+text-align: center;
+padding: 5px;
+}
+.mobile-menu a {
+  color: #eceed5;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 4px;
+  font-weight: normal;
+}
+
+/* Hide the desktop navigation menu on smaller screens */
+.desktop-menu {
+  display: none;
+}
+/* Show the mobile menu toggle button on smaller screens */
+.mobile-menu-toggle {
+  display: block;
+  color: #000;
+  border: none;
+  position: absolute;
+  left:70%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  /*margin: 10px 0;*/
+}
+#skill_container ul {
+  grid-template-columns: repeat(3, 1fr);
+}
+h2 {
+  margin-left: 2rem;
+}
+.about {
+  gap:70px;
+}
+  #qualification_container li {
+  font-size: 15px;
+}
+}
+
+/*********** Style for screen size upto 480*************/
+@media (max-width: 480px) {
+  #site-name a {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  #header {
+    background-color: #000000;
+    color: #eceed5;
+    width: 480px;
+  }
+  #profileimg img{
+    width: 200px;
+    height: 200px;
+  }
+  .mobile-menu-toggle {
+    color: #eceed5;
+  }
+  body{
+    background-color: #eceed5;
+    margin: 0;
+  }
+  .about {
+    flex-direction: column-reverse;
+    justify-content:center;
+    gap:20px;
+    margin:20px 0 0 31px;
+    align-items: center;
+    text-align: center;
+  }
+  img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .about p, #site-name {
+    display:none;
+  }
+  #site-name-for-mobile, #site-name-for-mobile a {
+    display:block;
+    color: #eceed5;
+  }
+  nav ul li:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  nav ul li {
+    margin:5px;
+    font-size: 12px;
+    padding:5px;
+  }
+  .downloadbtn {
+    width: 120px;
+    height: 32px;
+  }
+  .social-icons{
+    position: relative;
+    top: 240px;
+    display: block;
+  }
+  #profileimg {
+    position: relative;
+    top: -70px;
+  }
+  #line {
+    width: 250px;
+    margin: 0px auto 30px auto;
+    border-top: 1px solid #333;
+  }
+   /* Projects styles */
+   #project_container li a,
+   #project_container li p {
+     display: block;
+   }
+   #project_container li a{
+     font-weight: 700;
+     color: #000;
+     text-decoration: none;
+   }
+   #project_container li p {
+     font-weight: 500;
+   }
+   #project_container li:active a,
+   #project_container li:active p {
+     display: block;
+     text-decoration: none;
+   }
+   #project_container li:hover, #skill_container li img:hover  {
+     transform: none; /* Increase size by 10% */
+     background-color: transparent; /* remove the hover background color */
+   }
+   #project_container li:hover a,
+   #project_container li:hover p {
+     display: none; /* remove the hover text */
+   }
+   #project_container ul, #qualification_container ul{
+     margin-right: 2rem;
+     padding: 0;
+     display: block;
+   }
+   #project_container li, #qualification_container li  {
+     border: none;
+     box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);  /*Add box shadow */
+     width: 300px;
+     margin: 0 0 30px 35px;
+     display: block;
+     font-size: 13px;
+     font-family: 'Zilla Slab', serif;
+   }
+  #qualification_container li {
+    font-size: 15px;
+  }
+  #qualification_container li p:first-child {
+    font-weight: bold;
+  }
+  #skill_container ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
